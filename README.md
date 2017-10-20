@@ -1,3 +1,5 @@
+Can't you?
+
 # examples
 Code snippets and example programs referenced in Cooper Union's ECE-160 course
 
