@@ -21,7 +21,7 @@ int main() {
     v.reserve(3);
     for (int i = 0; i < 3; i++) {
       printf("Inserting %d at %p\n", i, &i);
-      v.push_back(i);
+      v.push_back(MyInt(i));
       // HERE
     }
     
