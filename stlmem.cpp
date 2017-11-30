@@ -24,5 +24,21 @@ int main() {
       v.push_back(i);
       // HERE
     }
+    
+    // different ways to iterate
+    std::vector<MyInt>::iterator it = v.begin(); 
+    while (it != v.end()) {
+      printf("Accessing %d at %p\n", it->i, &(it->i));
+      ++it;
+    }
+    
+    for (int i = 0; i < v.size(); i++) {
+      printf("Accessing %d at %p\n", v[i].i, &(v[i].i));
+    }
+    
+    for (auto myInt : v) {
+      printf("Accessing %d at %p\n", myInt.i, &(myInt.i));
+    }
+    
     return 0;
 }
